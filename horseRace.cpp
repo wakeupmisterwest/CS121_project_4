@@ -16,8 +16,6 @@ int main() {
 	bool keepGoing = true;
 
 	while (keepGoing) {
-		std::cout << "Press enter for another turn";
-		std::cin.get();
 
 		for (int i = 0; i < MAX_HORSES; i++) {
 			advance(i, position);
@@ -29,7 +27,9 @@ int main() {
 				break;
 			}
 		}
-		std::cout << std::endl;
+
+		std::cout << "Press enter for another turn";
+		std::cin.get();
 	}
 	return 0;
 }
